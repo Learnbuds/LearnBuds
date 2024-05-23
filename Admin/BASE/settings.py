@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'Core', # to handle functionalities
     'Dating', # for handling dating app features
     'Matrimony', # for handling matrimony app features
+    'JobPortal', # for handling job portal app features
 ]
 
 MIDDLEWARE = [

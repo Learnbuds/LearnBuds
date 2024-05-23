@@ -12,6 +12,7 @@ urlpatterns = [
     path('',include('Core.urls')),
     path('Dating/',include('Dating.urls')),
     path('Matrimony/',include('Matrimony.urls')),
+    path('JobPortal/',include('JobPortal.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
