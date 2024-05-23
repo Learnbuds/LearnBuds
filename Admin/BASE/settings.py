@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'U_Auth', # app for authentication
     'ErrHandler', # app for error handling 
     'Core', # to handle functionalities
+    'Dating', # for handling dating app features
 ]
 
 MIDDLEWARE = [
@@ -73,6 +74,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'learnbuds',
         'USER': 'root',
+        'PASSWORD' : '',
         'HOST': 'localhost',
         'PORT': '3306',
         'OPTIONS': {'sql_mode': 'traditional'}
