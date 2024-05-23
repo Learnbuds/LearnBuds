@@ -1,10 +1,13 @@
 from django.shortcuts import render,redirect
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required,user_passes_test
 
 # Create your views here.
 
 #----------------------------------- DASHBOARD -----------------------------------#
 
-@login_required
+@user_passes_test(lambda u: u.is_staff,login_url='sign-in')
 def dashboard(request):
-    return render(request,'Dashboard/Core/dashboard.html')
+    context = {
+        'page' : 'dashboard'
+    }
+    return render(request,'Dashboard/Core/dashboard.html',context)

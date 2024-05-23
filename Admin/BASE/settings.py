@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'ErrHandler', # app for error handling 
     'Core', # to handle functionalities
     'Dating', # for handling dating app features
+    'Matrimony', # for handling matrimony app features
 ]
 
 MIDDLEWARE = [
